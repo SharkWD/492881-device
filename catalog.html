@@ -47,12 +47,11 @@
 
 		<section class="filters">
 			<h2 class="filters-title">Фильтр:</h2>
-			<h3 class="filters-title-price">Стоимость</h3>
-			<!-- По поводу ползунка не знаю как с ними поступают. Нашел в интернете такой вот приме.
-			<input type="range" min="0" max="5000" id="filters-price" 
-     			onchange="priceValue()" value="10"> -->
-  			
+						  			
 			<form action="https://htmlacademy.ru/" class="filter" method="get">
+				<h3 class="filters-title-price">Стоимость</h3>
+				<input type="range" min="0" max="5000" id="filters-price" 
+     			onchange="priceValue()" value="10">
 				<fieldset>
 					<legend>Цвет</legend>
 					<ul>
@@ -112,16 +111,16 @@
 		<section class="catalog">
 				<h2 class="catalog-title">Сортировка:</h2>
 				<ul class="sorting-list">
-					<li class="sorting-button">По цене</li>
-					<li class="sorting-button">По типу</li>
-					<li class="sorting-button">По популярности</li>
+					<li class="sorting-button"><a href="#">По цене</a></li>
+					<li class="sorting-button"><a href="#">По типу</a></li>
+					<li class="sorting-button"><a href="#">По популярности</a></li>
 				</ul>
 				<ul class="sorting-value">
 					<li class="sorting-value-button">
-						<img src="http://placehold.it/10x10" alt="По убыванию">
+						<a href="#"></a>
 					</li>
 					<li class="sorting-value-button">
-						<img src="http://placehold.it/10x10" alt="По возрастанию">
+						<a href="#"></a>
 					</li>
 				</ul>
 				<ul class="catalog-list">
