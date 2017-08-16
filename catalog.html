@@ -8,8 +8,8 @@
 	<header class="page-header">
 		<div class="page-header-logo">
 			<a href="index.html" class="page-header-logo">
-			<img src="http://placehold.it/150x100" alt="Логотип">
-		</a>
+				<img src="http://placehold.it/150x100" alt="Логотип">
+			</a>
 		</div>
 	
 		<form action="https://htmlacademy.ru/" class="search-site" method="get">
@@ -22,7 +22,17 @@
 		
 		<nav class="page-navigation">
 			<ul class="header-site-navigation">
-				<li><a href="#">Каталог товаров</a></li>
+				<li>
+					<a href="#">Каталог товаров</a>
+					<ul class="catalog-hidden">
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+						<li><a href="#">Фитнес-браслеты</a></li>
+						<li><a href="#">Умные часы</a></li>
+						<li><a href="#">Квадрокоптеры</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
@@ -49,41 +59,51 @@
 			<h2 class="filters-title">Фильтр:</h2>
 						  			
 			<form action="https://htmlacademy.ru/" class="filter" method="get">
-				<h3 class="filters-title-price">Стоимость</h3>
-				<input type="range" min="0" max="5000" id="filters-price" 
-     			onchange="priceValue()" value="10">
+				<fieldset>
+					<h3 class="filters-title-price">Стоимость</h3>
+					<input type="range" min="0" max="5000" id="filters-price" 
+	     			onchange="priceValue()" value="10">
+	     			<label>
+	     				от
+	     				<input type='number' value="0" step='50' class="filter-price-range">
+	     			</label>
+	     			<label>
+	     				до
+	     				<input type='number' value="5000" step='50' class="filter-price-range">
+	     			</label>
+     			</fieldset>
 				<fieldset>
 					<legend>Цвет</legend>
 					<ul>
 						<li class="filter-option">
-						<label>
-							<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="black" checked>
-							Черный
-						</label>
+							<label>
+								<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="black" checked>
+								Черный
+							</label>
 						</li>
 						<li class="filter-option">
-						<label>
-							<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="white">
-							Белый
-						</label>
+							<label>
+								<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="white">
+								Белый
+							</label>
 						</li>
 						<li class="filter-option">
-						<label>
-							<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="blue" checked>
-							Синий
-						</label>
+							<label>
+								<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="blue" checked>
+								Синий
+							</label>
 						</li>
 						<li class="filter-option">
-						<label>
-							<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="red" checked>
-							Красный
-						</label>
+							<label>
+								<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="red" checked>
+								Красный
+							</label>
 						</li>
 						<li class="filter-option">
-						<label>
-							<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="pink">
-							Розовый
-						</label>
+							<label>
+								<input class='visually-hidden filter-input filter-input-checkbox' type="checkbox" name="pink">
+								Розовый
+							</label>
 					</ul>
 
 				</fieldset>
@@ -91,16 +111,16 @@
 					<legend>Bluetooth</legend>
 					<ul>
 						<li class="filter-option">
-						<label>
-							<input class='visually-hidden filter-input filter-input-radio' type="radio" name="radio" value="ok" checked>
-							Есть
-						</label>
+							<label>
+								<input class='visually-hidden filter-input filter-input-radio' type="radio" name="radio" value="ok" checked>
+								Есть
+							</label>
 						</li>
 						<li class="filter-option">
-						<label>
-							<input class='visually-hidden filter-input filter-input-radio' type="radio" name="radio" value="no">
-							Нет
-						</label>
+							<label>
+								<input class='visually-hidden filter-input filter-input-radio' type="radio" name="radio" value="no">
+								Нет
+							</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -117,10 +137,10 @@
 				</ul>
 				<ul class="sorting-value">
 					<li class="sorting-value-button">
-						<a href="#"></a>
+						<a href="#">По убыванию</a>
 					</li>
 					<li class="sorting-value-button">
-						<a href="#"></a>
+						<a href="#">По возрастанию</a>
 					</li>
 				</ul>
 				<ul class="catalog-list">
