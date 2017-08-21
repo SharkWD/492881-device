@@ -1,9 +1,9 @@
 body {
-color: #464646;
-font-family: "Open Sans";
-font-size: 15px;
-font-weight: 300;
-line-height: 30px;
+	color: #464646;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
 }
 
 .visually-hidden {
@@ -17,31 +17,31 @@ line-height: 30px;
 	overflow: hidden;
 }
 .catalog-preview-photo h3 {
-color: #000000;
-font-family: Gilroy;
-font-size: 18px;
-font-weight: 700;
+	color: #000000;
+	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
 }
 .services-title, 
 .info-title, 
 .contacts-title,
 .page-title {
-color: #000000;
-font-family: Gilroy;
-font-size: 47px;
-font-weight: 700;
+	color: #000000;
+	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-size: 47px;
+	font-weight: 700;
 }
 .filters-title,
- .catalog-title {
-color: #000000;
-font-family: Gilroy;
-font-size: 16px;
-font-weight: 700;
-text-transform: uppercase;
+.catalog-title {
+	color: #000000;
+	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .catalog-item-title {
-color: #000000;
-font-family: Gilroy;
-font-size: 18px;
-font-weight: 700;
+	color: #000000;
+	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
 }
