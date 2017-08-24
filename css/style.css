@@ -1,9 +1,45 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url(../fonts/web/gilroyextrabold.woff2);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url(../fonts/web/gilroylight.woff2);
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/web/opensans.woff2);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url(../fonts/web/opensanslight.woff);
+	font-weight: 300;
+	font-style: normal;
+}
 body {
+	margin: 0;
+	padding: 0;
+
 	color: #464646;
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
+
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
 }
 
 .visually-hidden {
@@ -16,32 +52,400 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
 .catalog-preview-photo h3 {
 	color: #000000;
-	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 }
+
 .services-title, 
 .info-title, 
 .contacts-title,
 .page-title {
 	color: #000000;
-	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 47px;
 	font-weight: 700;
 }
+
 .filters-title,
 .catalog-title {
 	color: #000000;
-	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
 .catalog-item-title {
 	color: #000000;
-	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: 700;
+}
+
+.page-header {
+	color: #000;
+
+	background-color: #f7e296;
+}
+
+.page-header-logo:hover {
+	opacity: 0.6;
+}
+
+.page-header-logo:active {
+	opacity: 0.3;
+}
+
+.user-navigation,
+.header-site-navigation,
+.catalog-hidden,
+.features {
+	list-style: none;
+}
+
+.user-navigation-link,
+.user-navigation-compare,
+.user-navigation-basket {	
+	color: #000000;
+	line-height: 36px;
+}
+
+.user-navigation-link:hover,
+.user-navigation-compare:hover,
+.user-navigation-basket:hover {
+	opacity: 0.6;
+}
+
+.user-navigation-link:active,
+.user-navigation-compare:active,
+.user-navigation-basket:active {
+	opacity: 0.3;
+}
+
+.header-site-navigation a {	
+	color: #000000;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.catalog-hidden {
+	display: none;	
+}
+
+.catalog-hidden a {
+	color: #000000;
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	text-transform: none;
+}
+
+.catalog-hidden:hover {
+	display: block;
+}
+
+.header-site-navigation>li:hover>.catalog-hidden {
+	display: block;
+}
+
+.header-site-navigation a:hover{
+	opacity: 0.6;
+}
+
+.header-site-navigation a:active {
+	opacity: 0.3;
+}
+
+.slider-number {
+	color: #fff;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 179px;
+	font-weight: 700;
+	line-height: 179px;
+}
+
+.slider-promo {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 47px;
+	font-weight: 700;
+}
+
+.slider>a {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.slider>a:hover {
+	background-color: #f0c52e;
+}
+
+.slider>a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.features-value {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.features-description {	
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.catalog-preview-photo {
+	list-style: none;
+}
+/*Не понял как сделать фотки меню и их активные состояния. Попробовал добавить дополнительный
+div , но все равно не получилось*/
+/*.catalog-preview-virtual, 
+.catalog-preview-monopod,
+.catalog-preview-camera,
+.catalog-preview-bracelet,
+.catalog-preview-clock,
+.catalog-preview-quadcopter {
+	width: 160px;
+	height: 160px;
+	background-color: rgba(240, 197, 46, 0.5);
+}
+.catalog-preview-virtual {
+	background-image: url(../img/popular-1.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.catalog-preview-monopod {
+	background-image: url(../img/popular-2.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.catalog-preview-camera {
+	background-image: url(../img/popular-3.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.catalog-preview-bracelet {
+	background-image: url(../img/popular-4.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.catalog-preview-clock {
+	background-image: url(../img/popular-5.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.catalog-preview-quadcopter {
+	background-image: url(../img/popular-6.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.catalog-preview-virtual:hover,
+.catalog-preview-monopod:hover,
+.catalog-preview-camera:hover,
+.catalog-preview-bracelet:hover,
+.catalog-preview-clock:hover,
+.catalog-preview-quadcopter:hover {
+	background-color: rgb(240, 197, 46);
+}
+
+.catalog-preview-virtual:active,
+.catalog-preview-monopod:active,
+.catalog-preview-camera:active,
+.catalog-preview-bracelet:active,
+.catalog-preview-clock:active,
+.catalog-preview-quadcopter:active {
+	background-color: rgba(240, 197, 46, 0.3);
+}
+*/
+.catalog-preview-photo h3:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.services {
+	background-color: #e5e5e5;
+}
+.services-list,
+.partners-list,
+.info-partners-list {
+	list-style: none;
+}
+
+.services-list a {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.services-list a:hover {
+	background-color: #f0c52e;
+}
+
+.services-list a:active {
+	color: #f7e184;
+	background-color: #000000;
+}
+
+.partners-list img {
+	opacity: 0.2;
+	background-color: #000000; /*Не понял как сделать картинки не цветными*/
+}
+
+.partners-list img:hover {
+	opacity: 1;
+}
+
+.info-partners-list a {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.info-partners-list a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.info-partners-list a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.info-details-link,
+.contacts-letter-link {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.info-details-link:hover,
+.contacts-letter-link:hover {
+	background-color: #f0c52e;
+}
+
+.info-details-link:active,
+.contacts-letter-link:active {
+	color: #f7e184;
+	background-color: #000000;
+}
+
+.page-footer {
+	background-color: #464646;
+}
+
+.footer-user-navigation,
+.footer-site-navigation {
+	list-style: none;
+}
+
+.footer-user-navigation a {
+	color: rgba(255, 255, 255, 0.7);
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+}
+
+.footer-site-navigation a {
+	color: #ffffff;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.page-footer-tel {
+	color: #ffffff;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.page-footer-logo:hover {
+	opacity: 0.6;
+}
+
+.page-footer-logo:active {
+	opacity: 0.3;
+}
+
+.footer-user-navigation a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-site-navigation a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.facebook {
+	height: 32px;
+	background-image: url(../img/fb.svg);
+	font-size: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.instagram {
+	height: 32px;
+	background-image: url(../img/vk.svg); /*Вместо инстаграм в архиве шла картинка вконтакте*/
+	font-size: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.twitter {
+	height: 32px;
+	background-image: url(../img/twitter.svg);
+	font-size: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+	opacity: 0.6;
+}
+
+.facebook:active,
+.instagram:active,
+.twitter:active {
+	opacity: 0.3;
+}
+
+.copiright a:hover {
+	opacity: 0.6;
+}
+
+.copiright a:active {
+	opacity: 0.3;
 }
