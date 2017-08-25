@@ -100,29 +100,64 @@ a {
 	opacity: 0.3;
 }
 
+.page-header input[type='text'] {
+	opacity: 0.3;
+	background-color: #f7e296;
+	border: none;
+}
+
+.page-header input[type='text']:hover {
+	opacity: 0.6;
+}
+
+.page-header input[type='text']:focus {
+	opacity: 1;
+	outline: none;
+	border-bottom: 1px solid black;
+}
+
+.search-site-button {/*Не понял только, как скрыть кнопку, а при фокусе снова открыть ее*/
+	color: #000000;
+	line-height: 36px;
+}
+
+.search-site>.search-site-button:hover {
+	color: #fff;
+	background-color: #000000;
+}
+
+.search-site>.search-site-button:active {
+	opacity: 0.3;
+}
+
 .user-navigation,
 .header-site-navigation,
 .catalog-hidden,
 .features {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
 .user-navigation-link,
 .user-navigation-compare,
-.user-navigation-basket {	
+.user-navigation-basket,
+.user-navigation-profile {	
 	color: #000000;
 	line-height: 36px;
 }
 
 .user-navigation-link:hover,
 .user-navigation-compare:hover,
-.user-navigation-basket:hover {
+.user-navigation-basket:hover,
+.user-navigation-profile:hover {
 	opacity: 0.6;
 }
 
 .user-navigation-link:active,
 .user-navigation-compare:active,
-.user-navigation-basket:active {
+.user-navigation-basket:active,
+.user-navigation-profile:active {
 	opacity: 0.3;
 }
 
@@ -145,10 +180,6 @@ a {
 	font-weight: 300;
 	line-height: 36px;
 	text-transform: none;
-}
-
-.catalog-hidden:hover {
-	display: block;
 }
 
 .header-site-navigation>li:hover>.catalog-hidden {
@@ -207,6 +238,8 @@ a {
 }
 
 .catalog-preview-photo {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 /*Не понял как сделать фотки меню и их активные состояния. Попробовал добавить дополнительный
@@ -285,6 +318,8 @@ div , но все равно не получилось*/
 .services-list,
 .partners-list,
 .info-partners-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -356,6 +391,8 @@ div , но все равно не получилось*/
 
 .footer-user-navigation,
 .footer-site-navigation {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -447,5 +484,180 @@ div , но все равно не получилось*/
 }
 
 .copiright a:active {
+	opacity: 0.3;
+}
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-active {
+	opacity: 0.3;
+	color: #000000;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 36px;
+}
+
+.breadcrumbs a:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+	opacity: 0.1;
+}
+.filters fieldset {
+	border: none;
+}
+
+.filters-title {
+	background-color: #dbdbdb;
+}
+
+.filters form {
+	background-color: #efefef;
+}
+.filters-title-price,
+.filters legend {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.filters ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filter-option {
+	color: #000000;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 40px;
+}
+
+.filter-input:hover {
+	opacity: 0.6;
+}
+
+.filter-input:active {
+	opacity: 1;
+}
+
+.sorting-list,
+.sorting-value {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #ebebeb;
+}
+
+.catalog-title {
+	background-color: #ebebeb;
+}
+
+.sorting-list a,
+.sorting-value a {
+	color: #000000;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	opacity: 0.3;
+}
+
+.sorting-list a:hover,
+.sorting-value a:hover {
+	opacity: 0.6;
+}
+
+.sorting-list a:active,
+.sorting-value a:active {
+	opacity: 1;
+}
+
+button[type='submit'] {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	outline: none;
+}
+
+button[type='submit']:hover {
+	background-color: #f0c52e;
+}
+
+button[type='submit']:active {
+	color: #f7e184;
+	background-color: #000000;
+}
+
+.catalog-item-price {
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.catalog-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #ebebeb;
+}
+
+.pagination-list a {
+	opacity: 0.3;
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.pagination-item-active a {
+	opacity: 1;
+}
+
+.pagination-list a:hover {
+	opacity: 0.6;
+}
+
+.pagination-list a:active {
+	opacity: 1;
+}
+
+.pagination-item-prev a,
+.pagination-item-next a {
+	color: #000000;
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	opacity: 1;
+}
+.pagination-item-prev a:hover,
+.pagination-item-next a:hover {
+	background-color: #d9d9d9;
+	opacity: 1;
+}
+
+.pagination-item-prev a:active,
+.pagination-item-next a:active {
+	background-color: #d9d9d9;
 	opacity: 0.3;
 }
