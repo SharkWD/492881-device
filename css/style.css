@@ -127,7 +127,7 @@ a {
 }
 
 .search-site>.search-site-button:active {
-	opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .user-navigation,
@@ -411,12 +411,9 @@ div , но все равно не получилось*/
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.page-footer-tel {
+.page-footer-tel,
+.page-footer-contacts {
 	color: #ffffff;
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
 }
 
 .page-footer-logo:hover {
