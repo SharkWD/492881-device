@@ -21,7 +21,7 @@
 
 @font-face {
 	font-family: "Open Sans";
-	src: url(../fonts/web/opensanslight.woff);
+	src: url(../fonts/web/opensanslight.woff2);
 	font-weight: 300;
 	font-style: normal;
 }
@@ -40,6 +40,19 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+.content-box-component {
+	box-sizing: content-box;
 }
 
 .visually-hidden {
@@ -86,9 +99,8 @@ a {
 	font-weight: 700;
 }
 
-.page-header {
+.page-header .container {
 	color: #000;
-
 	background-color: #f7e296;
 }
 
@@ -113,12 +125,18 @@ a {
 .page-header input[type='text']:focus {
 	opacity: 1;
 	outline: none;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
-.search-site-button {/*Не понял только, как скрыть кнопку, а при фокусе снова открыть ее*/
+.search-site-button {
 	color: #000000;
 	line-height: 36px;
+	border: 2px solid black;
+	background: transparent;
+	display: none;
+}
+.search-site-input:focus + .search-site-button {
+	display: inline-block;
 }
 
 .search-site>.search-site-button:hover {
@@ -128,6 +146,7 @@ a {
 
 .search-site>.search-site-button:active {
 	color: rgba(255, 255, 255, 0.3);
+	background-color: #000000;
 }
 
 .user-navigation,
@@ -242,77 +261,12 @@ a {
 	padding: 0;
 	list-style: none;
 }
-/*Не понял как сделать фотки меню и их активные состояния. Попробовал добавить дополнительный
-div , но все равно не получилось*/
-/*.catalog-preview-virtual, 
-.catalog-preview-monopod,
-.catalog-preview-camera,
-.catalog-preview-bracelet,
-.catalog-preview-clock,
-.catalog-preview-quadcopter {
-	width: 160px;
-	height: 160px;
-	background-color: rgba(240, 197, 46, 0.5);
-}
-.catalog-preview-virtual {
-	background-image: url(../img/popular-1.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
 
-.catalog-preview-monopod {
-	background-image: url(../img/popular-2.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.catalog-preview-camera {
-	background-image: url(../img/popular-3.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.catalog-preview-bracelet {
-	background-image: url(../img/popular-4.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.catalog-preview-clock {
-	background-image: url(../img/popular-5.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.catalog-preview-quadcopter {
-	background-image: url(../img/popular-6.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.catalog-preview-virtual:hover,
-.catalog-preview-monopod:hover,
-.catalog-preview-camera:hover,
-.catalog-preview-bracelet:hover,
-.catalog-preview-clock:hover,
-.catalog-preview-quadcopter:hover {
-	background-color: rgb(240, 197, 46);
-}
-
-.catalog-preview-virtual:active,
-.catalog-preview-monopod:active,
-.catalog-preview-camera:active,
-.catalog-preview-bracelet:active,
-.catalog-preview-clock:active,
-.catalog-preview-quadcopter:active {
-	background-color: rgba(240, 197, 46, 0.3);
-}
-*/
 .catalog-preview-photo h3:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.services {
+.services-wrap {
 	background-color: #e5e5e5;
 }
 .services-list,
@@ -450,7 +404,7 @@ div , но все равно не получилось*/
 
 .instagram {
 	height: 32px;
-	background-image: url(../img/vk.svg); /*Вместо инстаграм в архиве шла картинка вконтакте*/
+	background-image: url(../img/instagram.svg);
 	font-size: 0px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -509,13 +463,17 @@ div , но все равно не получилось*/
 }
 .filters fieldset {
 	border: none;
+	margin: 0;
+	padding: 0;
 }
 
-.filters-title {
+.filters-title-wrap {
 	background-color: #dbdbdb;
 }
 
 .filters form {
+	margin: 0;
+	padding: 0;
 	background-color: #efefef;
 }
 .filters-title-price,
@@ -555,10 +513,9 @@ div , но все равно не получилось*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: #ebebeb;
 }
 
-.catalog-title {
+.catalog-sorting-wrap {
 	background-color: #ebebeb;
 }
 
@@ -588,6 +545,7 @@ button[type='submit'] {
 	font-weight: 700;
 	text-transform: uppercase;
 	outline: none;
+	border: none;
 }
 
 button[type='submit']:hover {
@@ -657,4 +615,32 @@ button[type='submit']:active {
 .pagination-item-next a:active {
 	background-color: #d9d9d9;
 	opacity: 0.3;
+}
+/*Сетка страниц*/
+.container {
+	width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.page-header .container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-row-middle {
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-site {
+	flex-grow: 1;
+}
+.header-site-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider {
+	display: flex;
 }
