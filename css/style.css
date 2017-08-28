@@ -194,7 +194,7 @@ html {
 
 .catalog-hidden a {
 	color: #000000;
-	font-family: "Open Sans";
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 36px;
@@ -202,7 +202,7 @@ html {
 }
 
 .header-site-navigation>li:hover>.catalog-hidden {
-	display: block;
+	display: flex;
 }
 
 .header-site-navigation a:hover{
@@ -215,6 +215,8 @@ html {
 
 .slider-number {
 	color: #fff;
+	margin: 0;
+	padding: 0;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 179px;
 	font-weight: 700;
@@ -228,19 +230,21 @@ html {
 	font-weight: 700;
 }
 
-.slider>a {
+.slider a {
+	width: 220px;
 	color: #000000;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: 700;
+	text-align: center;
 	text-transform: uppercase;
 }
 
-.slider>a:hover {
+.slider a:hover {
 	background-color: #f0c52e;
 }
 
-.slider>a:active {
+.slider a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -296,7 +300,7 @@ html {
 
 .partners-list img {
 	opacity: 0.2;
-	background-color: #000000; /*Не понял как сделать картинки не цветными*/
+	background-color: #000000; 
 }
 
 .partners-list img:hover {
@@ -625,22 +629,86 @@ button[type='submit']:active {
 
 .page-header .container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
 }
 
-.header-row-middle {
-	display: flex;
-	justify-content: space-between;
-}
-
-.search-site {
-	flex-grow: 1;
-}
+.header-row-middle,
+.user-navigation,
 .header-site-navigation {
 	display: flex;
 	justify-content: space-between;
 }
 
+.user-navigation {
+	width: 500px;
+	height: 40px;
+	margin-right: 60px;	
+}
+.user-navigation li:nth-child(2) {
+	margin-left: auto;
+	margin-right: 30px;
+}
+
+.page-header-logo,
+.header-row-middle,
+.page-navigation {
+	margin-left: 60px;
+}
+
+.page-navigation {
+	margin-right: 60px;	
+	margin-top: 40px;
+}
+
+.header-site-navigation>li:first-child {
+	width: 540px;
+}
+
+.header-site-navigation>li:nth-child(2) {
+	margin-right: auto;
+}
+
+.header-site-navigation>li:nth-child(3) {
+	margin-right: 180px;
+}
+
+.catalog-hidden {
+	flex-wrap: wrap;
+}
+
+.catalog-hidden li {
+	margin-right: 40px;
+}
+
 .slider {
 	display: flex;
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+.slider-right-wrap {
+	width: 500px;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.slider-number {
+	order: -1;
+	align-self: flex-end;
+}
+.features {
+	display: flex;
+}
+.features>li {
+	width: 140px;
+}
+
+.catalog-preview-photo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-preview-photo>li {
+	width: 160px;
 }
