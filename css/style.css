@@ -677,7 +677,7 @@ button[type='submit']:active {
 	flex-wrap: wrap;
 }
 
-.catalog-hidden li {
+.catalog-hidden-item {
 	margin-right: 40px;
 }
 .slider {
@@ -704,7 +704,7 @@ button[type='submit']:active {
 .features {
 	display: flex;
 }
-.features>li {
+.features-item {
 	width: 140px;
 }
 
@@ -712,10 +712,6 @@ button[type='submit']:active {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-}
-
-.catalog-preview-photo>li {
-	width: 160px;
 }
 
 .services-wrap .container,
@@ -738,7 +734,7 @@ button[type='submit']:active {
 	padding: 0;
 }
 
-.services-list>li {
+.services-list-item {
 	width: 160px;
 	text-align: center;
 	margin-bottom: 30px;	
@@ -752,26 +748,23 @@ button[type='submit']:active {
 
 .contact-info-wrap {
 	display: flex;
+}
 
 .info
 .contacts {
 	display: flex;
 	flex-direction: column;
+}
 
 .info {
 	min-width: 480px;
 	margin-right: 120px;
 }
 
-.page-footer .container {
+.page-footer>.container {
 	display: flex;
 	flex-direction: column;
-	padding-top: 65px;
-	padding-bottom: 65px;
-}
-
-.social li {
-	min-width: 32px;
+	flex-wrap: wrap;
 }
 
 .footer-top-wrap,
@@ -780,40 +773,29 @@ button[type='submit']:active {
 .footer-user-navigation,
 .footer-site-navigation {
 	display: flex;
-	justify-content: space-between;	
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .footer-middle-wrap {
 	align-items: baseline;
-	margin-top: 30px;
-	margin-bottom: 60px;
-}
-
-.footer-user-navigation {
-	display: flex;
-	width: 330px;
-	justify-content: space-between;
 }
 
 .footer-site-navigation {
 	width: 440px;
-	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
-.social ul {
-	display: flex;	
-	justify-content: space-between;
-	max-width: 200px;	
+.footer-user-navigation {
+	width: 360px;
 }
-
-.social {
-	align-self: center;
+.social-button {
+	display: inline-block;
+	min-width: 34px;
+	min-height: 34px;
 }
-.social ul>li {
-	margin-right: 20px;
-}
-
-.social ul>li:last-child {
-	margin-right: 0px;
+.facebook,
+.instagram {
+	margin-right: 23px;
 }
