@@ -230,7 +230,7 @@ html {
 	font-weight: 700;
 }
 
-.slider a {
+.button {
 	width: 220px;
 	color: #000000;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
@@ -240,11 +240,25 @@ html {
 	text-transform: uppercase;
 }
 
-.slider a:hover {
+.info-details,
+.contacts-letter {
+	margin: 0;
+	padding: 0;
+}
+
+.filter>.button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	width: 200px;
+}
+
+.button:hover {
 	background-color: #f0c52e;
 }
 
-.slider a:active {
+.button:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -542,7 +556,7 @@ html {
 	opacity: 1;
 }
 
-button[type='submit'] {
+/*button[type='submit'] {
 	color: #000000;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 18px;
@@ -557,9 +571,8 @@ button[type='submit']:hover {
 }
 
 button[type='submit']:active {
-	color: #f7e184;
-	background-color: #000000;
-}
+	color: rgba(0, 0, 0, 0.3);
+}*/
 
 .catalog-item-price {
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
@@ -620,7 +633,10 @@ button[type='submit']:active {
 	background-color: #d9d9d9;
 	opacity: 0.3;
 }
+
+
 /*Сетка страниц*/
+
 .container {
 	width: 1200px;
 	padding: 0 20px;
@@ -790,12 +806,62 @@ button[type='submit']:active {
 .footer-user-navigation {
 	width: 360px;
 }
+
 .social-button {
 	display: inline-block;
 	min-width: 34px;
 	min-height: 34px;
 }
+
 .facebook,
 .instagram {
 	margin-right: 23px;
+}
+
+.breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.breadcrumbs-item {
+	margin-right: 40px;
+}
+
+.main-content-wrap>.container,
+.catalog-sorting-wrap,
+.sorting-list,
+.sorting-value,
+.catalog-list,
+.pagination-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.catalog-title,
+.filters-title,
+.catalog-item-title {
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-sorting-wrap,
+.catalog-list,
+.pagination-list {
+	justify-content: space-between;
+}
+
+.filters {
+	width: 267px;
+	margin-right: 73px;
+}
+
+.catalog {
+	display: flex;
+	width: 760px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
