@@ -99,9 +99,10 @@ html {
 	font-weight: 700;
 }
 
-.page-header .container {
+.page-header  .container {
 	color: #000;
-	background-color: #f7e296;
+	padding-top: 20px;
+	background-image: linear-gradient(#fff 40px, #f7e296 40px);
 }
 
 .page-header-logo>a:hover {
@@ -115,7 +116,8 @@ html {
 .page-header input[type='text'] {
 	opacity: 0.3;
 	background-color: #f7e296;
-	border: none;
+	border: none;	
+	line-height: 45px;
 }
 
 .page-header input[type='text']:hover {
@@ -126,17 +128,21 @@ html {
 	opacity: 1;
 	outline: none;
 	border-bottom: 2px solid black;
+	line-height: 43px;
 }
 
 .search-site-button {
 	color: #000000;
-	line-height: 36px;
+	box-sizing: border-box;
+	height: 47px;
 	border: 2px solid black;
 	background: transparent;
 	display: none;
 }
 .search-site-input:focus + .search-site-button {
 	display: inline-block;
+	line-height: 30px;
+	margin-left: -4px;
 }
 
 .search-site>.search-site-button:hover {
@@ -162,8 +168,16 @@ html {
 .user-navigation-compare,
 .user-navigation-basket,
 .user-navigation-profile {	
-	color: #000000;
+	color: #000000;	
+	display: inline-block;
 	line-height: 36px;
+	position: relative;
+	padding-left: 20px;
+	min-height: 40px;
+}
+
+.user-navigation-compare {
+	margin-right: 60px;
 }
 
 .user-navigation-link:hover,
@@ -203,6 +217,7 @@ html {
 
 .header-site-navigation>li:hover>.catalog-hidden {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .header-site-navigation a:hover{
@@ -232,6 +247,7 @@ html {
 
 .button {
 	width: 220px;
+	position: relative;
 	color: #000000;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 18px;
@@ -240,10 +256,26 @@ html {
 	text-transform: uppercase;
 }
 
+.button::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	top: 35%;
+	background-color: #f0c52e;
+	width: 100%;
+	height: 8px;
+}
+
 .info-details,
 .contacts-letter {
 	margin: 0;
 	padding: 0;
+}
+.info-details .button,
+.contacts-letter .button {
+	display: inline-block;
+	min-width: 260px;
 }
 
 .filter>.button {
@@ -358,11 +390,14 @@ html {
 }
 
 .page-footer {
+	padding-top: 65px;
+	padding-bottom: 65px;
 	background-color: #464646;
 }
 
 .footer-user-navigation,
-.footer-site-navigation {
+.footer-site-navigation,
+.social {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -412,47 +447,41 @@ html {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.facebook {
-	height: 32px;
+.facebook>a,
+.instagram>a,
+.twitter>a {
+	display: inline-block;
+	min-height: 34px;
+	width: 34px;
+	font-size: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.facebook>a {
+	
 	background-image: url(../img/fb.svg);
-	font-size: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
-.instagram {
-	height: 32px;
+.instagram>a {
 	background-image: url(../img/instagram.svg);
-	font-size: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
-.twitter {
-	height: 32px;
+.twitter>a {
 	background-image: url(../img/twitter.svg);
-	font-size: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
-.facebook:hover,
-.instagram:hover,
-.twitter:hover {
+.facebook>a:hover,
+.instagram>a:hover,
+.twitter>a:hover,
+.copiright>a:hover {
 	opacity: 0.6;
 }
 
-.facebook:active,
-.instagram:active,
-.twitter:active {
-	opacity: 0.3;
-}
-
-.copiright a:hover {
-	opacity: 0.6;
-}
-
-.copiright a:active {
+.facebook>a:active,
+.instagram>a:active,
+.twitter>a:active,
+.copiright>a:active {
 	opacity: 0.3;
 }
 
@@ -556,24 +585,6 @@ html {
 	opacity: 1;
 }
 
-/*button[type='submit'] {
-	color: #000000;
-	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-	outline: none;
-	border: none;
-}
-
-button[type='submit']:hover {
-	background-color: #f0c52e;
-}
-
-button[type='submit']:active {
-	color: rgba(0, 0, 0, 0.3);
-}*/
-
 .catalog-item-price {
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 16px;
@@ -655,15 +666,44 @@ button[type='submit']:active {
 	justify-content: space-between;
 }
 
+.search-site {
+	position: relative;
+	padding-left: 40px;
+}
+
+.search-site::before {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/search.svg)
+}
+
+.header-row-middle {
+	margin-right: 60px;
+	margin-left: 60px;
+}
 .header-site-navigation {
 	flex-wrap: wrap;
 }
 
 .user-navigation {
-	width: 500px;
-	min-height: 40px;
-	margin-right: 60px;
+	width: 500px;/*Я сделал ширину 500, т.к. в каталоге, где пользователь уже зашел*/
+	min-height: 40px;/* и появился еще один пункт меню, а общая ширина блока не поменялась*/
 	flex-wrap: wrap;	
+}
+
+.user-navigation>li:first-child {
+}
+
+.user-navigation>li:nth-child(2) {
+	margin-left: auto;
+}
+
+.footer-user-navigation>.user-navigation-link {
+	margin-right: 60px;
 }
 
 .page-header-logo,
@@ -687,10 +727,6 @@ button[type='submit']:active {
 
 .header-site-navigation>li:nth-child(3) {
 	margin-right: 180px;
-}
-
-.catalog-hidden {
-	flex-wrap: wrap;
 }
 
 .catalog-hidden-item {
@@ -795,7 +831,44 @@ button[type='submit']:active {
 }
 
 .footer-middle-wrap {
+	padding-top: 25px;
+	padding-bottom: 55px;
 	align-items: baseline;
+}
+
+
+.user-navigation-link::before,
+.user-navigation-compare::before,
+.user-navigation-basket::before,
+.user-navigation-profile::before {
+	content: '';
+	position: absolute;
+	
+}
+
+.user-navigation-link::before,
+.user-navigation-profile::before {
+	width: 13px;
+	height: 12px;	
+	left: 0;
+	top: 12px;	
+	background-image: url(../img/user.svg);
+}
+
+.user-navigation-compare::before {
+	width: 10px;
+	height: 10px;	
+	left: 0;
+	top: 14px;	
+	background-image: url(../img/compare.svg);
+}
+
+.user-navigation-basket::before {
+	width: 12px;
+	height: 12px;	
+	left: 0;
+	top: 12px;	
+	background-image: url(../img/cart.svg);
 }
 
 .footer-site-navigation {
@@ -803,8 +876,20 @@ button[type='submit']:active {
 	justify-content: space-around;
 }
 
-.footer-user-navigation {
-	width: 360px;
+.footer-left-line {
+	position: relative;
+	width: 80px;
+	min-height: 34px;
+}
+
+.footer-left-line::after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	background-color: #ffc600;
+	width: 100%;
+	height: 7px;
 }
 
 .social-button {
@@ -813,8 +898,8 @@ button[type='submit']:active {
 	min-height: 34px;
 }
 
-.facebook,
-.instagram {
+.facebook>a,
+.instagram>a {
 	margin-right: 23px;
 }
 
