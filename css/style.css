@@ -256,14 +256,56 @@ html {
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 179px;
 	font-weight: 700;
-	line-height: 179px;
 }
 
 .slider-promo {
 	color: #000000;
+	margin: 0;
+	padding: 0;
+	position: relative;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 47px;
 	font-weight: 700;
+	padding-top: 78px;
+	line-height: 57px;
+}
+
+.slider-promo:before {
+	content: '';
+	position: absolute;
+	top: 36px;
+	left: 2px;
+	width: 100px;
+	height: 7px;
+	background-color: #fff;
+}
+
+.slider-info {
+	margin: 0;
+	padding: 0;
+	margin-top: 18px;
+}
+
+.slider-description-wrap>.button {
+	margin-top: 50px;
+}
+
+.features {
+	margin-top: 63px;
+}
+
+.features-value,
+.features-description {
+	margin: 0;
+	padding: 0;
+}
+
+.features-value {
+	margin-bottom: 18px;
+}
+
+.features-item:first-child {
+	margin-right: 20px;
 }
 
 .button {
@@ -281,7 +323,7 @@ html {
 	content: '';
 	position: absolute;
 	z-index: -1;
-	left: 0px;
+	left: 0;
 	top: 0;
 	bottom: 0;
 	margin: auto;
@@ -767,13 +809,14 @@ html {
 .catalog-hidden-item {
 	margin-right: 40px;
 }
+
 .slider {
 	display: flex;
 	width: 1160px;
 	padding-left: 90px;
 	padding-right: 60px;
 	padding-top: 48px;
-	background-image: linear-gradient(#f7e296 160px, #fff 160px);
+	background-image: linear-gradient(#f7e296 158px, #fff 158px);
 }
 
 .slider-photo-wrap {
@@ -782,14 +825,17 @@ html {
 
 .slider-description-wrap {
 	width: 50%;
+	position: relative;	
+	padding-left: 3px;
 	margin-left: auto;
 	display: flex;
 	flex-direction: column;
 }
 
 .slider-number {
-	order: -1;
-	align-self: flex-end;
+	position: absolute;
+	top: 60px;
+	right: -10px;
 }
 .features {
 	display: flex;
