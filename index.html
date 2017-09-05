@@ -286,5 +286,31 @@
 			</div>
 		</div>
 	</footer>
+	<section class="modal modal-login">
+		<h2 class="visually-hidden">Личный кабинет</h2>
+  		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+  			<div class="login-form-wrap">
+		    	<p class="login-form-item">
+		    		<label class="modal-title" for="user-login">Ваше имя:</label><br>
+		    		<input class="login-user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
+		   		</p>
+		    	<p class="login-form-item">
+		    		<label class="modal-title" for="user-password">Ваш e-mail:</label><br>
+		    		<input class="login-email" id="user-password" type="email" name="email" placeholder="Для отправки ответа">
+		    	</p>
+		    	<p class="login-form-item">
+		    		<label class="modal-title" for="user-comment">Текст письма</label><br>
+		    		<textarea name="user-comment" id="user-comment" placeholder="В свободной форме"></textarea>
+		    	</p>
+		    	<button class="modal-close" type="button">Закрыть</button>
+	    	</div>
+		    <button class="button" type="submit">Отправить</button>
+  		</form>  		
+	</section>
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<p><img src="img/map-full.jpg" width="960" height="559" alt="Офис компании по адресу г.Москва, ул.Строителей, 15"></p>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
 </body>
 </html>
