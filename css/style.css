@@ -219,6 +219,7 @@ html {
 }
 
 .user-navigation-link.current {
+	opacity: 0.3;
 	padding-left: 20px;
 }
 .user-navigation-basket {
@@ -642,13 +643,13 @@ html {
 .footer-user-navigation .user-navigation-link svg,
  .footer-user-navigation .user-navigation-compare svg,
  .footer-user-navigation .user-navigation-basket svg {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .footer-user-navigation .user-navigation-link:hover svg,
 .footer-user-navigation .user-navigation-compare:hover svg,
 .footer-user-navigation .user-navigation-basket:hover svg {
-	opacity: 1;
+	opacity: 0.6;
 }
 
 .footer-user-navigation .user-navigation-link:hover,
@@ -717,6 +718,7 @@ html {
 	font-size: 0px;
 	background-repeat: no-repeat;
 	background-position: center;
+	opacity: 0.3;
 }
 
 .facebook>a {
@@ -743,7 +745,7 @@ html {
 .instagram>a:active,
 .twitter>a:active,
 .copiright>a:active {
-	opacity: 0.3;
+	opacity: 0.1;
 }
 
 .breadcrumbs {
@@ -1028,6 +1030,11 @@ input[type=radio] + .filter-input-text::before {
 
 .sorting-list a:active,
 .sorting-value a:active {
+	opacity: 1;
+}
+
+.sorting-button .sorting-button-current,
+.sorting-value .sorting-value-down {
 	opacity: 1;
 }
 
