@@ -504,7 +504,17 @@ html {
 	margin-bottom: 24px;
 }
 
-.services-list-link:active {
+.servis-list-item-current::after {
+	display: none;
+}
+
+.servis-list-item-current:hover {
+	width: 160px;
+	color: #000000;
+}
+
+.services-list-link:active,
+.servis-list-item-current {
 	width: 100%;
 	color: #f7e184;
 	text-align: left;
@@ -1510,17 +1520,35 @@ input[type=radio] + .filter-input-text::before {
 
 .services-wrap .container {	
 	min-height: 457px;
-	position: relative;
 }
 
-.services-wrap .container:after {
+.services-slides:after {
 	content: '';
 	width: 136px;
 	height: 164px;
 	position: absolute;
-	top: 153px;
-	right: 85px;
+	top: 0;
+	left: 560px;
+}
+
+.delivery.services-slides:after {
 	background-image: url('../img/delivery.svg');
+}
+
+.warranty.services-slides:after {
+	width: 171px;
+	top: -23px;
+	left: 545px;
+	height: 195px;
+	background-image: url('../img/warranty.svg');
+}
+
+.credit.services-slides:after {
+	width: 156px;
+	height: 188px;
+	top: -22px;
+	left: 536px;
+	background-image: url('../img/credit.svg');
 }
 
 .services-wrap {
@@ -1550,6 +1578,7 @@ input[type=radio] + .filter-input-text::before {
 
 .services-description-wrap {
 	margin-top: 152px;
+	position: relative;
 }
 
 .partners-list,
