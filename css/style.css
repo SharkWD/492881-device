@@ -20,7 +20,7 @@
 }
 
 @font-face {
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	src: url(../fonts/web/opensanslight.woff2);
 	font-weight: 300;
 	font-style: normal;
@@ -30,7 +30,7 @@ body {
 	padding: 0;
 
 	color: #464646;
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
@@ -286,7 +286,7 @@ html {
 
 .catalog-hidden a {
 	color: #000000;
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 36px;
@@ -628,7 +628,7 @@ html {
 
 .footer-user-navigation a {
 	color: rgba(255, 255, 255, 1);
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 36px;
@@ -723,15 +723,15 @@ html {
 
 .facebook>a {
 	
-	background-image: url(../img/fb.svg);
+	background-image: url('../img/fb.svg');
 }
 
 .instagram>a {
-	background-image: url(../img/instagram.svg);
+	background-image: url('../img/instagram.svg');
 }
 
 .twitter>a {
-	background-image: url(../img/twitter.svg);
+	background-image: url('../img/twitter.svg');
 }
 
 .facebook>a:hover,
@@ -760,7 +760,7 @@ html {
 .breadcrumbs-active {
 	opacity: 0.3;
 	color: #000000;
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 36px;
@@ -797,14 +797,13 @@ html {
 }
 
 .filters-row-top {
-	background-image: linear-gradient(to right, #dcdcdc 33.3333%, #ebebeb 33.33333%);
+	background-image: linear-gradient(to right, #dcdcdc 50%, #ebebeb 50%);
 	margin-top: 40px;
 }
 
 .filters-row-middle {
-	background-image: linear-gradient(to right, #efefef 33.3333%, #fff 33.33333%);
+	background-image: linear-gradient(to right, #efefef 50%, #fff 50%);
 	display: flex;
-	padding-top: 70px;
 }
 
 .filters-row-top>.container,
@@ -816,6 +815,11 @@ html {
 
 .filters-title-wrap {
 	width: 267px;
+	background-color: #dcdcdc;
+}
+
+.catalog-sorting-wrap {
+	background-color: #ebebeb;
 }
 
 .catalog-sorting-wrap,
@@ -846,8 +850,16 @@ html {
 .filters form {
 	margin: 0;
 	padding: 0;
+	padding-top: 70px;
 	width: 267px;
+	background-color: #efefef;
 }
+
+.catalog-item-wrap {
+	padding-top: 70px;
+	background-color: #fff;
+}
+
 .filters-title-price,
 .filters legend {
 	margin: 0;
@@ -866,7 +878,7 @@ html {
 
 .filter-option {
 	color: #000000;
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 40px;
@@ -1147,7 +1159,7 @@ input[type=radio] + .filter-input-text::before {
 	border: none;
 	background-color: transparent;
 	color: rgba(0, 0, 0, 0.5);
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 36px;
@@ -1313,7 +1325,7 @@ input[type=radio] + .filter-input-text::before {
 	left: 4px;
 	width: 16px;
 	height: 16px;
-	background-image: url(../img/search.svg)
+	background-image: url('../img/search.svg')
 }
 
 .header-row-middle {
@@ -1359,7 +1371,7 @@ input[type=radio] + .filter-input-text::before {
 	bottom: 0;
 	margin: auto;
 	left: 290px;
-	background-image: url(../img/plus.svg);
+	background-image: url('../img/plus.svg');
 	width: 16px;
 	height: 16px;
 	opacity: 0.3;
@@ -1687,7 +1699,7 @@ input[type=radio] + .filter-input-text::before {
 	height: 12px;	
 	left: 0;
 	top: 12px;	
-	background-image: url(../img/user.svg);
+	background-image: url('../img/user.svg');
 	color: red;
 }
 
@@ -1696,7 +1708,7 @@ input[type=radio] + .filter-input-text::before {
 	height: 10px;	
 	left: 0;
 	top: 14px;	
-	background-image: url(../img/compare.svg);
+	background-image: url('../img/compare.svg');
 }
 
 .user-navigation-basket::before {
@@ -1704,7 +1716,7 @@ input[type=radio] + .filter-input-text::before {
 	height: 12px;	
 	left: 0;
 	top: 12px;	
-	background-image: url(../img/cart.svg);
+	background-image: url('../img/cart.svg');
 }
 
 .footer-user-navigation .user-navigation-link {
@@ -1880,8 +1892,8 @@ input[type=radio] + .filter-input-text::before {
 	border: none;
 }
 
-.login-form input[type="text"],
-.login-form input[type="email"] {
+.login-form input[type='text'],
+.login-form input[type='email'] {
 	font: inherit;
 	color: #464646;
 }
