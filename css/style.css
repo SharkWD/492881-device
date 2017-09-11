@@ -370,7 +370,7 @@ html {
 }
 
 .features {
-	margin-top: 58px;
+	margin-top: 56px;
 }
 
 .features-value,
@@ -625,7 +625,7 @@ html {
 
 .page-footer {
 	padding-top: 65px;
-	padding-bottom: 65px;
+	padding-bottom: 70px;
 	background-color: #464646;
 }
 
@@ -689,7 +689,7 @@ html {
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 4.2px;
+	letter-spacing: 3.8px;
 }
 .page-footer-tel,
 .page-footer-contacts {
@@ -724,6 +724,7 @@ html {
 .instagram>a,
 .twitter>a {
 	display: inline-block;
+	vertical-align: middle;
 	height: 34px;
 	width: 34px;
 	font-size: 0px;
@@ -789,7 +790,7 @@ html {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	padding-top: 10px;
+	padding-top: 8px;
 }
 
 .filters .filters-bluetooth {
@@ -975,15 +976,21 @@ input[type=radio] + .filter-input-text::before {
 
 .price-controls label {
 	display: inline-block;
-	width: 35%;
+	width: 33,3333%;
 	color: rgba(0, 0, 0, 0.2);
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: 300;
+	line-height: 26px;
 }
 .price-controls {
 	font-size: 0;
-	margin-bottom: 23px;
+	margin-bottom: 27px;
+}
+
+.price-controls .min-price {
+	padding-top: 0;
+	padding-right: 20px;
 }
 
 .price-controls input {
@@ -1087,6 +1094,7 @@ input[type=radio] + .filter-input-text::before {
 .sorting-value .sorting-value-up {
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0;	
 	padding: 0;
 	font-size: 0;
@@ -1105,7 +1113,7 @@ input[type=radio] + .filter-input-text::before {
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	left: 0;
+	left: 3px;
 	background-image: url('../img/icon-down-dir.svg');
 	background-repeat: no-repeat;
 }
@@ -1118,7 +1126,7 @@ input[type=radio] + .filter-input-text::before {
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	right: 0;
+	right: -3px;
 	background-image: url('../img/icon-up-dir.svg');
 	background-repeat: no-repeat;
 }
@@ -1768,6 +1776,10 @@ input[type=radio] + .filter-input-text::before {
 	        justify-content: space-between;
 }
 
+.footer-user-navigation {
+	margin-top: -5px;
+}
+
 .footer-top-wrap {
 	-webkit-box-align: start;
 	    -ms-flex-align: start;
@@ -1776,8 +1788,8 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .footer-middle-wrap {
-	padding-top: 5px;
-	padding-bottom: 40px;
+	padding-top: 3px;
+	padding-bottom: 47px;
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
 	        align-items: flex-end;
@@ -1862,12 +1874,16 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .footer-site-navigation {
-	width: 440px;
+	min-width: 440px;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	padding-bottom: 11px;
-	margin-right: 45px;
+	        justify-content: flex-start;
+	padding-bottom: 10px;
+	margin-right: 10px;
+}
+
+.footer-site-navigation>li {
+	margin-right: 30px;
 }
 
 .footer-left-line {
@@ -1889,15 +1905,19 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .social-button {
-	display: inline-block;
+	/*display: inline-block;
+	vertical-align: top;*/
 	min-width: 34px;
 	min-height: 34px;
-	margin-right: 23px;
+	/*margin-right: 23px;*/
 }
 
 .social {
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	min-width: 160px;
+	display: flex;
+	justify-content: space-around;
+	margin-right: 47px;
 }
 
 .copiright {
