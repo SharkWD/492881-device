@@ -1,27 +1,31 @@
 @font-face {
 	font-family: 'Gilroy';
-	src: url(../fonts/web/gilroyextrabold.woff2);
+	src: url(../fonts/web/gilroyextrabold.woff2),
+		 url(../fonts/web/gilroyextrabold.woff);
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Gilroy';
-	src: url(../fonts/web/gilroylight.woff2);
+	src: url(../fonts/web/gilroylight.woff2),
+		 url(../fonts/web/gilroylight.woff);
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Open Sans';
-	src: url(../fonts/web/opensans.woff2);
+	src: url(../fonts/web/opensans.woff2),
+		 url(../fonts/web/opensans.woff);
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Open Sans';
-	src: url(../fonts/web/opensanslight.woff2);
+	src: url(../fonts/web/opensanslight.woff2),
+		 url(../fonts/web/opensanslight.woff);
 	font-weight: 300;
 	font-style: normal;
 }
@@ -143,6 +147,7 @@ html {
 
 .page-header input[type='text'] {
 	opacity: 0.3;
+	min-height: 38px;
 	background-color: #f7e296;
 	border: none;
 	border-bottom: 2px solid transparent;	
@@ -187,6 +192,9 @@ html {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #000000;
 	display: inline-block;
+	position: absolute;
+	top: -7px;
+	left: 196px;
 }
 
 .user-navigation,
@@ -1852,7 +1860,7 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .footer-user-navigation .user-navigation-compare {
-	margin-right: 20px;
+	margin-right: 17px;
 }
 
 .footer-user-navigation .user-navigation-link::before,
@@ -1862,15 +1870,18 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .icon-user {
-	padding-right: 26px;
+	padding-left: 0;
+	margin-right: 14px;
 }
-
 .icon-compare {
-	padding-right: 20px;
+	padding-left: 0;
+	margin-right: 11px;
 }
 
 .icon-cart {
-	padding-right: 22px;
+	padding-left: 0;
+	margin-right: 11px;
+
 }
 
 .footer-site-navigation {
