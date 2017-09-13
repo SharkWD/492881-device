@@ -284,8 +284,7 @@ html {
 	margin-right: 30px;
 }
 
-.header-site-navigation>li:last-child,
-.header-site-navigation>li:first-child {
+.header-site-navigation>li:last-child {
 	margin-right: 0px;
 }
 
@@ -1431,7 +1430,8 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .header-site-navigation>li:first-child {
-	width: 540px;
+	max-width: 540px;
+	margin-right: auto;
 }
 
 .header-site-navigation>li:first-child:after {
@@ -1666,9 +1666,8 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .services-wrap {
-	background-image: -webkit-linear-gradient(bottom, #e5e5e5 287px, #fff 287px);
-	background-image: -o-linear-gradient(bottom, #e5e5e5 287px, #fff 287px);
-	background-image: linear-gradient(to top, #e5e5e5 287px, #fff 287px);
+	min-height: 456px;
+	background-image: linear-gradient(to bottom, #fff 169px, #e5e5e5 169px);
 }
 .services-list {
 	-webkit-box-orient: vertical;
