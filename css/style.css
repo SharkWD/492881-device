@@ -1669,6 +1669,8 @@ input[type=radio] + .filter-input-text::before {
 
 .services-wrap {
 	min-height: 456px;
+	background-image: -webkit-linear-gradient(top, #fff 169px, #e5e5e5 169px);
+	background-image: -o-linear-gradient(top, #fff 169px, #e5e5e5 169px);
 	background-image: linear-gradient(to bottom, #fff 169px, #e5e5e5 169px);
 }
 .services-list {
@@ -1923,8 +1925,11 @@ input[type=radio] + .filter-input-text::before {
 
 .social {
 	min-width: 160px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	margin-right: 47px;
 }
 
