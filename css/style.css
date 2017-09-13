@@ -177,6 +177,7 @@ html {
 }
 .search-site-input:focus + .search-site-button {
 	display: inline-block;
+	vertical-align: middle;
 	position: absolute;
 	top: -7px;
 	left: 196px;
@@ -192,6 +193,7 @@ html {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #000000;
 	display: inline-block;
+	vertical-align: middle;
 	position: absolute;
 	top: -7px;
 	left: 196px;
@@ -212,16 +214,10 @@ html {
 .user-navigation-profile {	
 	color: #000000;
 	display: inline-block;
+	vertical-align: middle;
 	line-height: 36px;
 	position: relative;
 	min-height: 40px;
-}
-
-.user-navigation-link,
-.user-navigation-compare,
-.user-navigation-basket,
-.user-navigation-profile {
-	display: inline-block;
 }
 
 .user-navigation-profile {
@@ -429,6 +425,7 @@ html {
 .info-details .button,
 .contacts-letter .button {
 	display: inline-block;
+	vertical-align: middle;
 	min-width: 260px;
 }
 
@@ -489,6 +486,7 @@ html {
 .services-list-link {
 	color: #000000;
 	display: inline-block;
+	vertical-align: middle;
 	position: relative;
 	width: 160px;
 	height: 40px;
@@ -581,6 +579,7 @@ html {
 .info-partners-link {
 	color: #000000;
 	display: inline-block;
+	vertical-align: middle;
 	position: relative;
 	padding-left: 35px;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
@@ -802,7 +801,7 @@ html {
 
 .filters .filters-bluetooth {
 	margin-top: 31px;
-	padding-bottom: 30px;
+	padding-bottom: 35px;
 }
 
 .filters fieldset::before {
@@ -983,6 +982,7 @@ input[type=radio] + .filter-input-text::before {
 
 .price-controls label {
 	display: inline-block;
+	vertical-align: middle;
 	width: 33,3333%;
 	color: rgba(0, 0, 0, 0.2);
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
@@ -1319,6 +1319,7 @@ input[type=radio] + .filter-input-text::before {
 .pagination-item-prev a,
 .pagination-item-next a {	
 	display: inline-block;
+	vertical-align: middle;
 	color: #000000;
 	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 	font-size: 16px;
@@ -1554,6 +1555,7 @@ input[type=radio] + .filter-input-text::before {
 
 .index-catalog-preview-item {
 	display: inline-block;
+	vertical-align: middle;
 	width: 160px;
 	position: relative;
 	padding-top: 177px;
@@ -1915,15 +1917,11 @@ input[type=radio] + .filter-input-text::before {
 }
 
 .social-button {
-	/*display: inline-block;
-	vertical-align: top;*/
 	min-width: 34px;
 	min-height: 34px;
-	/*margin-right: 23px;*/
 }
 
 .social {
-	/*margin-right: 20px;*/
 	min-width: 160px;
 	display: flex;
 	justify-content: space-around;
